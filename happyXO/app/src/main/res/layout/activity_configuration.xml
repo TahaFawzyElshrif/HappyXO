@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    tools:context=".configuration"
+    android:layoutDirection="ltr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="35dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="17.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text="USER NAME"
+                android:textColor="#95A9DA"
+                android:textSize="20sp"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                app:cardCornerRadius="70dp"
+                app:cardElevation="90dp">
+
+                <EditText
+                    android:id="@+id/userName"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#95A9DA"
+                    android:fontFamily="@font/aclonica"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17.5dp"
+            android:layout_marginBottom="17.5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text="YOU ARE (ANSWER X or O)"
+                android:textColor="#95A9DA"
+                android:textSize="20sp"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                app:cardCornerRadius="70dp"
+                app:cardElevation="90dp">
+
+                <EditText
+                    android:id="@+id/userIsX"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#95A9DA"
+                    android:text=""
+                    android:fontFamily="@font/aclonica"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/textMatrix"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text="GAME MATRIX :"
+                android:textColor="#95A9DA"
+                android:textSize="20sp"
+                android:layout_marginTop="17.5dp"
+                android:layout_marginBottom="17.5dp"
+                /><!--change this TextView text affect java code-->
+
+            <SeekBar
+                android:id="@+id/seekMatrix"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="160"
+                android:layout_marginBottom="17.5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/text_Time"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text="TIME LEVEL  :"
+                android:textColor="#95A9DA"
+                android:textSize="20sp"
+                android:layout_marginTop="17.5dp"
+                android:layout_marginBottom="17.5dp"
+                /><!--change this TextView text affect java code-->
+
+            <SeekBar
+                android:id="@+id/seek_TIME"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="160"
+                android:layout_marginBottom="17.5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/text_AI"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text="AI LEVEL :"
+                android:textColor="#95A9DA"
+                android:textSize="20sp"
+                android:layout_marginTop="17.5dp"
+                android:layout_marginBottom="17.5dp"
+                /><!--change this TextView text affect java code-->
+
+            <SeekBar
+                android:id="@+id/seek_AI"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="160"
+                android:layout_marginBottom="17.5dp"/>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17.5dp"
+            app:cardCornerRadius="70dp"
+            app:cardElevation="90dp"
+            >
+            <com.balysv.materialripple.MaterialRippleLayout
+                style="@style/menu_buttons_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#3D0D6C">
+
+            <Button
+                android:id="@+id/apply"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#802EC6"
+                android:fontFamily="@font/aclonica"
+                android:text="APPLY"
+                android:textSize="20sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17.5dp"
+            app:cardCornerRadius="70dp"
+            app:cardElevation="90dp"
+            >
+            <com.balysv.materialripple.MaterialRippleLayout
+                style="@style/menu_buttons_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#3D0D6C">
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FD0378"
+                    android:fontFamily="@font/aclonica"
+                    android:text="CANCEL"
+                    android:textSize="20sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

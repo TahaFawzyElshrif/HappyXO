@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_lose"
+    tools:context=".WON">
+
+
+    <ImageView
+        android:id="@+id/img1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/cry"
+        app:layout_constraintLeft_toRightOf="@id/guideline7"
+        app:layout_constraintTop_toBottomOf="@id/guideline5"
+        tools:layout_editor_absoluteX="248dp"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/disappointed"
+        app:layout_constraintLeft_toLeftOf="@id/guideline7"
+        app:layout_constraintTop_toBottomOf="@id/guideline6"
+        tools:layout_editor_absoluteY="731dp" />
+
+    <ImageView
+        android:id="@+id/img6"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        android:src="@drawable/sad"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintRight_toLeftOf="@id/guideline7"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="205dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/img4"
+
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="-100dp"
+        android:src="@drawable/picture7"
+        app:layout_constraintRight_toLeftOf="@id/guideline7"
+        app:layout_constraintTop_toBottomOf="@id/guideline6"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="647dp" />
+
+    <ImageView
+        android:id="@+id/img5"
+
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="100dp"
+        android:src="@drawable/picture6"
+        app:layout_constraintRight_toLeftOf="@id/guideline7"
+        app:layout_constraintTop_toBottomOf="@id/guideline6"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="581dp" />
+
+    <ImageView
+        android:id="@+id/img3"
+
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/picture6"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintLeft_toRightOf="@id/guideline7"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".28" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".70" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <TextView
+        android:id="@+id/congText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="YOU LOSS"
+        android:textColor="#5392DC"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

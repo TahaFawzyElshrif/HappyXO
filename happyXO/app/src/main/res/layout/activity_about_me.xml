@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    tools:context=".AboutMe">
+
+    <LinearLayout
+        android:id="@+id/infol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="68dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:drawableLeft="@drawable/small_logo"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/aclonica"
+            android:text="Happy XO v1.0.0"
+            android:textColor="#5392DC"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:drawableLeft="@drawable/small_logo"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/aclonica"
+            android:text="Created by:"
+            android:textColor="#5392DC"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/aclonica"
+            android:text="Taha Fawazy Anwar"
+            android:textColor="#5392DC"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:drawableLeft="@drawable/small_logo"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/aclonica"
+            android:text="Email:"
+            android:textColor="#5392DC"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/aclonica"
+            android:text="tahaelshrif1@gmail.com"
+            android:textColor="#5392DC"
+            android:textSize="20sp" />
+    </LinearLayout>
+</RelativeLayout>
