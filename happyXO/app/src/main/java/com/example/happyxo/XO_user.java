@@ -251,6 +251,7 @@ public class XO_user extends AppCompatActivity {
         text.setWidth(800 / Settings.N_cells);//to get small when many cells
         text.setHeight(800 / Settings.N_cells);
         text.setGravity(Gravity.CENTER);
+        text.setTextSize(25);
         text=addZoomAnimation(text,actv);
         return text;
     }
