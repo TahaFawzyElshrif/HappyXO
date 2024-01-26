@@ -52,7 +52,6 @@ easy interface with animations : after installition you can:
     -the most important limit is that when play with another user ,both on same mobile phone 
     (user not connected)
     -same times may got suddenly not-work
-    -no security layers added
 
 
 ## contact info
