@@ -1,6 +1,7 @@
 package com.example.happyxo;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -14,7 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 public class MainActivity2 extends AppCompatActivity {
-    RelativeLayout MainLayout;
+    ConstraintLayout MainLayout;
     LinearLayout top,bottom,center;
     ImageButton withAI,userButton,Settings,about;
     ImageView img1,img3;
@@ -22,7 +23,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        MainLayout=(RelativeLayout)findViewById(R.id.MainLayout);
+        MainLayout=findViewById(R.id.MainLayout);
 
 
         top=(LinearLayout)findViewById(R.id.TopLayout);

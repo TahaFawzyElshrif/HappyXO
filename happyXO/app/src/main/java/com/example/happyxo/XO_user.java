@@ -206,6 +206,12 @@ public class XO_user extends AppCompatActivity {
         for (int i = 0; i < Settings.N_cells; i++) {
             LinearLayout row = new LinearLayout(actv);
             row.setOrientation(LinearLayout.HORIZONTAL);
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,0
+            );
+            layoutParams.weight = 1;
+            row.setLayoutParams(layoutParams);
+
             for (int j = 0; j < Settings.N_cells; j++) {
                 CardView card_text = new CardView(actv);
                 card_text=prepare_card(card_text);
@@ -225,20 +231,23 @@ public class XO_user extends AppCompatActivity {
         return texts;
     }
     private static MaterialRippleLayout prepare_materialRipple(MaterialRippleLayout mat) {
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT
+        );
+        mat.setLayoutParams(layoutParams);
         mat.setRippleColor(Color.parseColor("#FF5722"));
         mat.setBackgroundColor(Color.WHITE);
         return mat;
     }
 
     private static CardView prepare_card(CardView card) {
+
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.WRAP_CONTENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT
+            0,LinearLayout.LayoutParams.MATCH_PARENT
         );
-        int marginPx = 100 / Settings.N_cells;
+        int marginPx = 36 / Settings.N_cells;
         layoutParams.setMargins(marginPx, marginPx, marginPx, marginPx);
-        layoutParams.height = 800 / Settings.N_cells;//to get small when many cells
-        layoutParams.width = 800 / Settings.N_cells;
+        layoutParams.weight=1;
         card.setLayoutParams(layoutParams);
         card.setRadius(35);
         card.setElevation(90);
@@ -248,8 +257,8 @@ public class XO_user extends AppCompatActivity {
     private static EditText prepare_EditText(EditText text,AppCompatActivity actv) {
         text.setText("");
         text.setBackgroundResource(R.drawable.texts);
-        text.setWidth(800 / Settings.N_cells);//to get small when many cells
-        text.setHeight(800 / Settings.N_cells);
+        text.setWidth(330 / Settings.N_cells);
+        text.setHeight(330 / Settings.N_cells);//-->approximate values on low pixels device ,i tried match_parent ,wrap_content not worked
         text.setGravity(Gravity.CENTER);
         text.setTextSize(25);
         text=addZoomAnimation(text,actv);

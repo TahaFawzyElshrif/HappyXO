@@ -26,7 +26,7 @@
             android:drawableLeft="@drawable/small_logo"
             android:drawablePadding="20dp"
             android:fontFamily="@font/aclonica"
-            android:text="Happy XO v1.0.0"
+            android:text="Happy XO v1.1.0"
             android:textColor="#5392DC"
             android:textSize="20sp" />
 
